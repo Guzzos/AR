@@ -1397,4 +1397,196 @@ footer p:last-child {
         text-align: center;
         gap: 1rem;
     }
+
+}
+
+/* Correcciones de espaciado para todas las páginas */
+.page-hero {
+    background: linear-gradient(135deg, var(--azul-marino) 0%, var(--azul-claro) 100%);
+    padding: 120px 2rem 60px; /* Reducido el padding inferior */
+    text-align: center;
+    color: var(--texto-claro);
+    margin-top: 60px;
+}
+
+.page-hero h1 {
+    font-size: 2.5rem; /* Un poco más pequeño */
+    margin-bottom: 1rem;
+    animation: fadeInUp 1s ease;
+}
+
+.page-hero .hero-subtitle {
+    font-size: 1.2rem;
+    opacity: 0.9;
+    animation: fadeInUp 1s ease 0.2s backwards;
+    margin-bottom: 0; /* Eliminamos margen extra */
+}
+
+/* Ajuste para las secciones que siguen al hero */
+.about-content,
+.proposal-intro,
+.orientations-intro,
+.featured-project,
+.gallery-filters,
+.contact-main {
+    padding: 60px 0 40px; /* Menos padding superior e inferior */
+}
+
+/* Reducir padding en secciones generales */
+section {
+    background-color: var(--gris-claro);
+    padding: 60px 0; /* Reducido de 80px */
+}
+
+section:nth-child(even) {
+    background-color: var(--texto-claro);
+}
+
+/* Ajustes específicos para el contenido de Nosotros */
+.about-text h2 {
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+}
+
+.history-section {
+    margin-top: 2rem;
+}
+
+.history-section h3 {
+    margin-bottom: 1rem;
+    color: var(--azul-marino);
+}
+
+/* Ajustes para Propuesta Pedagógica */
+.proposal-intro h2 {
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    color: var(--azul-marino);
+}
+
+.proposal-intro p {
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+/* Ajustes para Orientaciones */
+.orientations-intro h2 {
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    color: var(--azul-marino);
+}
+
+.orientations-intro p {
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+/* Ajustes para Proyectos */
+.project-hero h2 {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+}
+
+.project-subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+}
+
+/* Ajustes para Galería */
+.gallery-filters {
+    padding: 30px 0; /* Reducido */
+    background: var(--texto-claro);
+    position: sticky;
+    top: 60px;
+    z-index: 100;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+/* Ajustes para Contacto */
+.contact-info h2 {
+    margin-bottom: 2rem;
+    color: var(--azul-marino);
+}
+
+.contact-form-container h2 {
+    margin-bottom: 2rem;
+    color: var(--azul-marino);
+}
+
+/* Mejorar espaciado en cards y grids */
+.card,
+.mv-card,
+.team-member,
+.level-card,
+.pillar-card,
+.project-card,
+.story-card,
+.article-card,
+.faq-item {
+    padding: 2rem; /* Reducido de 2.5-3rem */
+}
+
+/* Ajustar grids para mejor distribución */
+.about-grid,
+.modular-content,
+.benefits-content,
+.contact-grid,
+.collaboration-content {
+    gap: 3rem; /* Reducido de 4rem */
+}
+
+/* Ajustes responsive para móviles */
+@media (max-width: 768px) {
+    .page-hero {
+        padding: 100px 1rem 40px;
+    }
+    
+    .page-hero h1 {
+        font-size: 2rem;
+    }
+    
+    .page-hero .hero-subtitle {
+        font-size: 1.1rem;
+    }
+    
+    section {
+        padding: 40px 0;
+    }
+    
+    .about-content,
+    .proposal-intro,
+    .orientations-intro,
+    .featured-project,
+    .contact-main {
+        padding: 40px 0 20px;
+    }
+    
+    .card,
+    .mv-card,
+    .team-member,
+    .level-card,
+    .pillar-card,
+    .project-card,
+    .story-card,
+    .article-card,
+    .faq-item {
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .page-hero {
+        padding: 90px 1rem 30px;
+    }
+    
+    .page-hero h1 {
+        font-size: 1.8rem;
+    }
+    
+    section {
+        padding: 30px 0;
+    }
 }
