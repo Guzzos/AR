@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería - EPD Albert Einstein N°1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo">
+                <span>EPD Albert Einstein N°1</span>
+            </div>
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="propuesta.html">Propuesta Pedagógica</a></li>
+                <li><a href="orientaciones.html">Orientaciones</a></li>
+                <li><a href="proyectos.html">Proyectos</a></li>
+                <li><a href="galeria.html" class="active">Galería</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="page-hero">
+        <div class="section-container">
+            <h1>Galería de Actividades</h1>
+            <p class="hero-subtitle">Momentos que capturan la esencia de nuestra comunidad educativa</p>
+        </div>
+    </section>
+
+    <section class="gallery-filters">
+        <div class="section-container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">Todas</button>
+                <button class="filter-btn" data-filter="proyectos">Proyectos</button>
+                <button class="filter-btn" data-filter="eventos">Eventos</button>
+                <button class="filter-btn" data-filter="aula-maker">Aula Maker</button>
+                <button class="filter-btn" data-filter="deportes">Deportes</button>
+                <button class="filter-btn" data-filter="ciencias">Ciencias</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="gallery-main">
+        <div class="section-container">
+            <div class="gallery-grid">
+                <div class="gallery-item" data-category="proyectos">
+                    <div class="gallery-image">
+                        <div class="image-placeholder">🦾</div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Proyecto de Prótesis</h3>
+                        <p>Desarrollo y pruebas de prótesis 3D por estudiantes de Orión y Lepus</p>
+                        <span class="gallery-date">Octubre 2025</span>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="aula-maker">
+                    <div class="gallery-image">
+                        <div class="image-placeholder">🖨️</div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Impresión 3D</h3>
+                        <p>Estudiantes diseñando y fabricando prototipos en el Aula Maker</p>
+                        <span class="gallery-date">Septiembre 2025</span>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="eventos">
+                    <div class="gallery-image">
+                        <div class="image-placeholder">🎓</div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Ceremonia de Graduación</h3>
+                        <p>Celebración del éxito académico de nuestros egresados</p>
+                        <span class="gallery-date">Diciembre 2024</span>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="ciencias">
+                    <div class="gallery-image">
+                        <div class="image-placeholder">🔬</div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Laboratorio de Ciencias</h3>
+                        <p>Experimentos prácticos en nuestro laboratorio equipado</p>
+                        <span class="gallery-date">Agosto 2025</span>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="proyectos">
+                    <div class="gallery-image">
+                        <div class="image-placeholder">🤖</div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Competencia de Robótica</h3>
+                        <p>Nuestros robots participando en competencias intercolegiales</p>
+                        <span class="gallery-date">Julio 2025</span>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="deportes">
+                    <div class="gallery-image">
+                        <div class="image-placeholder">⚽</div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Torneos Deportivos</h3>
+                        <p>Participación en competencias deportivas locales y regionales</p>
+                        <span class="gallery-date">Junio 2025</span>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="eventos">
+                    <div class="gallery-image">
+                        <div class="image-placeholder">🎨</div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Feria de Arte y Ciencia</h3>
+                        <p>Exposición de proyectos creativos y científicos estudiantiles</p>
+                        <span class="gallery-date">Mayo 2025</span>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="aula-maker">
+                    <div class="gallery-image">
+                        <div class="image-placeholder">💻</div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Programación Creativa</h3>
+                        <p>Sesiones de coding y desarrollo de software en el Aula Maker</p>
+                        <span class="gallery-date">Abril 2025</span>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="ciencias">
+                    <div class="gallery-image">
+                        <div class="image-placeholder">🌱</div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Proyecto Ambiental</h3>
+                        <p>Estudiantes trabajando en iniciativas de sostenibilidad</p>
+                        <span class="gallery-date">Marzo 2025</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="video-gallery">
+        <div class="section-container">
+            <h2 class="section-title">En los Medios</h2>
+            <p class="section-subtitle">Cobertura de nuestros proyectos en televisión y prensa</p>
+            
+            <div class="videos-grid">
+                <div class="video-item">
+                    <div class="video-thumbnail">
+                        <div class="play-icon">▶️</div>
+                        <div class="video-placeholder">📺</div>
+                    </div>
+                    <div class="video-info">
+                        <h3>Noticiero Mediodía</h3>
+                        <p>Entrevista sobre el proyecto de prótesis 3D</p>
+                        <span class="video-date">24 de Julio 2025</span>
+                    </div>
+                </div>
+                
+                <div class="video-item">
+                    <div class="video-thumbnail">
+                        <div class="play-icon">▶️</div>
+                        <div class="video-placeholder">📺</div>
+                    </div>
+                    <div class="video-info">
+                        <h3>La Mañana Dimensión</h3>
+                        <p>Reportaje especial sobre nuestro sistema modular</p>
+                        <span class="video-date">24 de Julio 2025</span>
+                    </div>
+                </div>
+                
+                <div class="video-item">
+                    <div class="video-thumbnail">
+                        <div class="play-icon">▶️</div>
+                        <div class="video-placeholder">📺</div>
+                    </div>
+                    <div class="video-info">
+                        <h3>Gracias Por Estar</h3>
+                        <p>Presentación de nuestros logros académicos</p>
+                        <span class="video-date">12 de Julio 2025</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="press-coverage">
+        <div class="section-container">
+            <h2 class="section-title">En las Noticias</h2>
+            
+            <div class="press-articles">
+                <div class="article-card">
+                    <h3>Alumnos de la 'Albert Einstein' diseñan prótesis para mejorar la calidad de vida</h3>
+                    <p class="article-source">Agencia San Luis - Julio 2025</p>
+                    <p class="article-excerpt">Estudiantes de la escuela pública digital desarrollan prótesis funcionales utilizando impresión 3D...</p>
+                    <a href="#" class="article-link">Leer artículo completo</a>
+                </div>
+                
+                <div class="article-card">
+                    <h3>Estudiantes diseñan prótesis para mejorar la calidad de vida de dos personas</h3>
+                    <p class="article-source">ULP Noticias - Julio 2025</p>
+                    <p class="article-excerpt">Proyecto innovador que combina tecnología 3D con compromiso social...</p>
+                    <a href="#" class="article-link">Leer artículo completo</a>
+                </div>
+                
+                <div class="article-card">
+                    <h3>Avances en el diseño de prótesis y primeras pruebas con pacientes</h3>
+                    <p class="article-source">ULP Noticias - Agosto 2025</p>
+                    <p class="article-excerpt">Los estudiantes realizan las primeras pruebas de funcionalidad con los pacientes...</p>
+                    <a href="#" class="article-link">Leer artículo completo</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="gallery-cta">
+        <div class="section-container">
+            <div class="cta-content">
+                <h2>¿Eres parte de nuestra comunidad?</h2>
+                <p>Comparte tus fotos y experiencias para que formen parte de nuestra galería oficial.</p>
+                <a href="contacto.html" class="btn btn-primary">Enviar Material</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2025 Escuela Pública Digital Albert Einstein N°1 - San Luis, Argentina</p>
+            <p>Desarrollado con ❤️ para la comunidad educativa</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const galleryItems = document.querySelectorAll('.gallery-item');
+            
+            filterButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const filter = this.getAttribute('data-filter');
+                    
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    this.classList.add('active');
+                    
+                    galleryItems.forEach(item => {
+                        if (filter === 'all' || item.getAttribute('data-category') === filter) {
+                            item.style.display = 'block';
+                        } else {
+                            item.style.display = 'none';
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>
